@@ -1,0 +1,56 @@
+ System.out.println("");
+        System.out.println("Elige una opción: ");
+        System.out.println(ROJO+"1)"+RESET+" Bajar por la escalera en espiral");
+        System.out.println(ROJO+"2)"+RESET+" Adentrarte por el túnel derecho");
+        System.out.println(ROJO+"3)"+RESET+" Seguir el pasillo de la izquierda");
+        System.out.println(ROJO+"4)"+RESET+" Explorar la pequeña sala lateral");
+        System.out.println(ROJO+"5)"+RESET+" Salir corriendo hacia la entrada");
+        System.out.print("> ");
+        int opt = sc.nextInt();
+        
+        System.out.println("------------------------------------");
+        System.out.println("");
+        
+        
+        //hago un switch para empezar a ramificar
+        switch (opt){
+            //camino 3
+            case 3:
+                System.out.println("Te aventuras por el pasillo de la izquierda, siguiendo el murmullo del agua. Llegas a una sala con una fuente subterránea. En el centro de la fuente, hay una estatua que representa \na un ser con tentáculos y ojos innumerables. Notas un pequeño altar frente a la estatua, y sobre este, tres objetos antiguos..");
+                System.out.println("");
+                System.out.println("Elige una opción: ");
+                System.out.println(ROJO+"1)"+RESET+" Investigar la estatua");
+                System.out.println(ROJO+"2)"+RESET+" Coger alguno de los tres objetos");
+                System.out.print("> ");
+                opt = sc.nextInt();
+                
+                System.out.println("------------------------------------");
+                System.out.println("");
+                
+               
+                if (opt == 2){ //camino 3.2
+                    System.out.println("Al acercarte ves una "+ROJO+"daga"+RESET+", un "+ROJO+"simbolo"+RESET+" y una "+ROJO+"moneda"+RESET+".");
+                    System.out.println("Escribe el nombre del objeto que recoges: ");
+                    System.out.print("> ");
+                    objeto = sc.next();
+                    
+                    System.out.println("------------------------------------");
+                    System.out.println("");
+                    
+                    salida = 50; //sigue el camino 3 con objeto
+                } else { //camino 3.1
+                    salida = 50; //sigue el camino 3 sin objeto
+                }
+                
+                break;
+            case 2: //camino 2
+                System.out.println("El túnel derecho está cubierto de extrañas marcas y símbolos que parecen haber sido tallados por manos no humanas. Al adentrarte, el ambiente se vuelve opresivo y el aire está cargado \nde una energía que parece pulsar a tu alrededor. Tras unos minutos caminando, llegas a una sala circular con un pedestal en el centro. En el pedestal hay un artefacto \nde forma irregular, brillante y pulsante. La luz que emite te inquieta profundamente.");
+                System.out.println("Elige una opción: ");
+                System.out.println(ROJO+"1)"+RESET+" Coger el artefacto");
+                System.out.println(ROJO+"2)"+RESET+" Examinar los símbolos de la pared");
+                System.out.println(ROJO+"3)"+RESET+" Salir de la sala y continuar explorando el túnel");
+                System.out.print("> ");
+                opt = sc.nextInt();
+                        
+                System.out.println("------------------------------------");
+                System.out.println("");
